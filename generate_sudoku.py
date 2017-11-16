@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-
 from itertools import product
 import random
 import copy
@@ -139,9 +136,9 @@ def unique_answer(grid):
 def generate(args):
     max_iter = args.size
     full_sudoku = sudoku_generate_backtracking()
-    print(full_sudoku)
+    # print(full_sudoku)
     full_sudoku = [full_sudoku[x:x+9] for x in range(0,81,9)]
-    print(full_sudoku)
+    # print(full_sudoku)
 
     enable_pairs = [(i, j) for i in range(9) for j in range(9)]
 
@@ -170,8 +167,8 @@ def generate(args):
                 break
         random_pair = enable_pairs[j]
 
-    print(sudoku)
-    print(i)
+    # print(sudoku)
+    # print(i)
 
     for i in range(9):
         result = ''
